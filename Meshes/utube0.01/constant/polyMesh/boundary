@@ -14,13 +14,13 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-3
+4
 (
     Wall
     {
-        type            patch;
-        physicalType    patch;
-        nFaces          176842;
+        type            wall;
+        physicalType    wall;
+        nFaces          758;
         startFace       131584;
     }
     Out
@@ -28,14 +28,20 @@ FoamFile
         type            patch;
         physicalType    patch;
         nFaces          100;
-        startFace       308426;
+        startFace       132342;
     }
     In
     {
-        type            wall;
-        physicalType    wall;
+        type            patch;
+        physicalType    patch;
         nFaces          100;
-        startFace       308526;
+        startFace       132442;
+    }
+    defaultFaces
+    {
+        type            empty;
+        nFaces          176084;
+        startFace       132542;
     }
 )
 
